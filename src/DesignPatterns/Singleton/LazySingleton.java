@@ -11,7 +11,7 @@ public class LazySingleton {
         if (lazySingleton == null){
             try {
                 // 睡眠1毫秒 try catch 代码块可删;只是为了多线程测试
-                Thread.sleep(1);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -21,6 +21,7 @@ public class LazySingleton {
         // 返回
         return lazySingleton;
     }
+    // 可删
     public static void main(String[] args) {
         for (int i = 0; i < 100; i++) {
             new Thread(()->{
