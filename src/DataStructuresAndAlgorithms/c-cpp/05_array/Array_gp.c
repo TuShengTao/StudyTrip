@@ -2,7 +2,7 @@
 
 #include <string.h>
 #include <stdbool.h>
-
+// 我的测试2
 Array* arrayCreate()
 {
     struct Array *array = NULL;
