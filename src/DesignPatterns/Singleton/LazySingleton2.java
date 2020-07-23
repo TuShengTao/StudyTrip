@@ -15,10 +15,10 @@ public class LazySingleton2 {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            // 实例化
+            // 实例化 反射
             lazySingleton2 = new LazySingleton2();
         }
-        // 返回
+        // 返回 invoke
         return lazySingleton2;
     }
     // 可删
