@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-07-23 06:21:38
+ * @LastEditTime: 2020-07-23 06:21:38
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /StudyTrip/src/DataStructuresAndAlgorithms/c-cpp/05_array/Array_gp.h
+ */ 
 #ifndef __ARRAY_H__
 #define __ARRAY_H__
 
@@ -6,19 +14,19 @@
 
 typedef struct Array
 {
-    // pÖ¸ÕëµÄ¿Õ¼ä´óĞ¡
+    // pæŒ‡é’ˆçš„ç©ºé—´å¤§å°
     size_t size;
-    // pÖ¸ÕëÒÑ¾­Ê¹ÓÃµÄ¿Õ¼ä´óĞ¡
+    // pæŒ‡é’ˆå·²ç»ä½¿ç”¨çš„ç©ºé—´å¤§å°
     size_t len;
-    // Êı¾İÀàĞÍµÄ´óĞ¡
+    // æ•°æ®ç±»å‹çš„å¤§å°
     size_t typeSize;
-    // Öµ¸´ÖÆº¯Êı
+    // å€¼å¤åˆ¶å‡½æ•°
     void(*dup)(void *ptr, void *key);
-    // ÖµÊÍ·Åº¯Êı
+    // å€¼é‡Šæ”¾å‡½æ•°
     void(*free)(void *ptr);
-    // Öµ±È½Ïº¯Êı
+    // å€¼æ¯”è¾ƒå‡½æ•°
     int(*match)(void *ptr, void *key);
-    // ´æ·ÅÊı¾İµÄÖ¸Õë
+    // å­˜æ”¾æ•°æ®çš„æŒ‡é’ˆ
     void   *p;
 }Array;
 
