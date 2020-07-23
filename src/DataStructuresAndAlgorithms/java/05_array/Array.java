@@ -19,12 +19,16 @@ public class Array {
     public Array(int capacity){
         this.data = new int[capacity];
         this.n = capacity;
-        this.count=0;//一开始一个数都没有存所以为0
+        //一开始一个数都没有存所以为0
+        this.count=0;
+
     }
 
     //根据索引，找到数据中的元素并返回
     public int find(int index){
-        if (index<0 || index>=count) return -1;
+        if (index<0 || index>=count) {
+            return -1;
+        }
         return data[index];
     }
 
