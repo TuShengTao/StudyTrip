@@ -6,8 +6,16 @@
       <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/Singleton" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/Strategy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/DataStructuresAndAlgorithms/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/JVM/jvm/jcstress/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/JVM/jvm/jcstress/results" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/JVM/jvm/jmh/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/JVM/jvm/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/黑马数据结构与算法资料/代码/algorithm/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jackson-annotations-2.3.3" level="project" />
+    <orderEntry type="library" name="jackson-core-2.3.3" level="project" />
+    <orderEntry type="library" name="jackson-databind-2.3.3" level="project" />
   </component>
 </module>
