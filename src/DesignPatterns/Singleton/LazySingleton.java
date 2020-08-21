@@ -18,11 +18,14 @@ public class LazySingleton {
             // 实例化
             lazySingleton = new LazySingleton();
         }
-        // 返回
         return lazySingleton;
     }
-    // 可删
+
+    /**
+     * 主方法测试
+     */
     public static void main(String[] args) {
+        // 可能会输出多个不同的哈希码，说明生成了多个实例
         for (int i = 0; i < 100; i++) {
             new Thread(()->{
                 System.out.println(LazySingleton.getInstance().hashCode());

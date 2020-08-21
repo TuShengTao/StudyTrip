@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/StudyTrip.iml" filepath="$PROJECT_DIR$/StudyTrip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/heima/concurrent/case_java7/case_java7.iml" filepath="$PROJECT_DIR$/src/heima/concurrent/case_java7/case_java7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/heima/concurrent/case_java8/case_java8.iml" filepath="$PROJECT_DIR$/src/heima/concurrent/case_java8/case_java8.iml" />
     </modules>
   </component>
 </project>

@@ -4,13 +4,22 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/Singleton" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/Strategy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/DataStructuresAndAlgorithms/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/JVM/jvm/jcstress/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/JVM/jvm/jcstress/results" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/JVM/jvm/jmh/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/JVM/jvm/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/黑马数据结构与算法资料/代码/algorithm/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/图解数据结构Java/ch02/ch02_01/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/DataStruct" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/steg" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Multithreading/ProductionConsumption" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Network" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/heima/concurrent/case_java7/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/heima/concurrent/case_java8/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Multithreading/Synchronized" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/SimpleStrategyDemo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/Proxy/StaticProxy" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
