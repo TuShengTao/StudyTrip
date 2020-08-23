@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 /*
  * @Author: 屠圣涛
@@ -63,6 +64,7 @@ public class Test {
 		System.out.println("质数");
 		System.out.println(str+"\n");
 		System.out.println("质数个数："+count);
+		System.out.println(Arrays.toString(prime));
 
     }
 }

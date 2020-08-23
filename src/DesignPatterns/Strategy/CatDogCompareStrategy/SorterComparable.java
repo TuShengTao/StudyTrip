@@ -2,13 +2,12 @@ import java.util.Arrays;
 
 /**
  * @author: Tu ShengTao
- * @Description: 使用自己实现的Comparable接口进行排序
+ * @Description: 使用Comparable接口进行排序,不使用策略模式
  * @date 2020-08-18 16:59
  */
 public class SorterComparable {
     /**
      * 排序
-     *
      */
     public static void sort(Comparable[] arr){
         for (int i = 0; i < arr.length ; i++) {

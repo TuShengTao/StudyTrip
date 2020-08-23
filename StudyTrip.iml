@@ -12,14 +12,18 @@
       <sourceFolder url="file://$MODULE_DIR$/src/黑马数据结构与算法资料/代码/algorithm/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/图解数据结构Java/ch02/ch02_01/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/DataStruct" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/steg" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/Strategy/CatDogCompareStrategy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Multithreading/ProductionConsumption" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Network" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/heima/concurrent/case_java7/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/heima/concurrent/case_java8/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/Multithreading/Synchronized" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/SimpleStrategyDemo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/Strategy/SimpleStrategyDemo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/Proxy/StaticProxy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/Strategy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Sort/MergeSort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Search" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/Proxy/DynamicProxy" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
