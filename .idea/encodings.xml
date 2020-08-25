@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/DataStruct/Test.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/DesignPatterns/Strategy/CatDogCompareStrategy/SorterComparable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/Network/InetAdressDemo.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/heima/concurrent/case_java7" charset="UTF-8" />
   </component>
 </project>

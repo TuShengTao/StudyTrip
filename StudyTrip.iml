@@ -24,6 +24,9 @@
       <sourceFolder url="file://$MODULE_DIR$/src/Sort/MergeSort" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Search" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/DesignPatterns/Proxy/DynamicProxy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Annotaion/AnnotaionDemo_1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Annotaion/AnnotaionDemo_2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Annotaion/AnnotaionDemo_3" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
