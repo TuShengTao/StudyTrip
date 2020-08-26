@@ -16,7 +16,7 @@ public class UserRest {
     /**
      * 主方法测试
      *
-     * @param args arg游戏
+     * @param args
      */
     public static void main(String[] args) throws NoSuchMethodException {
         Controller controller = UserRest.class.getAnnotation(Controller.class);

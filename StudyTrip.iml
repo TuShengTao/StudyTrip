@@ -27,11 +27,14 @@
       <sourceFolder url="file://$MODULE_DIR$/src/Annotaion/AnnotaionDemo_1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Annotaion/AnnotaionDemo_2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Annotaion/AnnotaionDemo_3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/GenericsAndReflection/Reflection" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Serialize" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jackson-annotations-2.3.3" level="project" />
     <orderEntry type="library" name="jackson-core-2.3.3" level="project" />
     <orderEntry type="library" name="jackson-databind-2.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.2.0.RELEASE" level="project" />
   </component>
 </module>
