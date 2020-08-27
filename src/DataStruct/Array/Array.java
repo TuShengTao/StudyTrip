@@ -4,15 +4,12 @@ import java.util.Arrays;
 
 /**
  * @author: tushengtao
- * @Description: 自己封装一个数组，泛型数组
+ * @Description: 自己封装一个数组，泛型数组,还有许多不完善的地方
  * @date 2020-08-23 14:41
  */
 public class Array<T> {
     private T[] array;
-
-    // 元素个数
-    private int size = 0;
-
+    private int size;
     /**
      * 无参的构造函数 默认大小是10
      */
@@ -34,12 +31,11 @@ public class Array<T> {
      */
     public void add(T element){
         // 判断是否需要扩容
+        array[size] = element;
+        // 元素个数加 1
+        size++;
         if (array.length <= size){
             expand();
-        }else {
-            array[size] = element;
-            // 元素个数加 1
-            size++;
         }
     }
 
@@ -48,8 +44,8 @@ public class Array<T> {
      */
     private void expand(){
         // 新建一个数组 长度是之前的2倍
-        T[] newArray = (T[]) new Object[array.length * 2];
-        for (int i = 0; i < array.length; i++) {
+        T[] newArray = (T[]) new Object[size * 2];
+        for (int i = 0; i < size; i++) {
             newArray[i] = array[i];
         }
         array = newArray;
@@ -63,11 +59,20 @@ public class Array<T> {
         if (index < 0 || index > array.length ){
             throw new RuntimeException("下标越界！");
         }else{
-            T[] newArray = (T[]) new Object[array.length];
-            for (int i = 0; i < array.length; i++) {
-                if (i != index){
-                    newArray[i] = array[i];
+            T[] newArray = (T[]) new Object[2*size];
+            int newIndex = 0;
+            int oldIndex = 0;
+            for (int i = 0; i < size; i++) {
+                if (i == index ){
+                    oldIndex++;
+                    continue;
+                }else {
+                    newArray[newIndex] = array[oldIndex];
+                    newIndex++;
+                    oldIndex++;
                 }
+
+
             }
             array = newArray;
             size--;
@@ -78,7 +83,7 @@ public class Array<T> {
      * @param element 元素
      */
     public void update(int index,T element){
-        if (index < 0 || index > array.length){
+        if (index < 0 || index >= size){
             throw new RuntimeException("下标越界");
         }else {
             // 实现修改
