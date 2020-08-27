@@ -2,7 +2,7 @@ import java.lang.reflect.Field;
 
 /**
  * @author: tushengtao
- * @Description:
+ * @Description: 使用父类的构造器注入
  * @date 2020-08-26 14:49
  */
 public abstract class Person {

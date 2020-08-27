@@ -1,5 +1,7 @@
 package Array;
 
+import java.util.Arrays;
+
 /**
  * @author: tushengtao
  * @Description: 自己封装一个数组，泛型数组
@@ -8,8 +10,11 @@ package Array;
 public class Array<T> {
     private T[] array;
 
+    // 元素个数
+    private int size = 0;
+
     /**
-     * 无参的构造函数
+     * 无参的构造函数 默认大小是10
      */
     public Array(){
         array = (T[]) new Object[10];
@@ -24,18 +29,29 @@ public class Array<T> {
     }
 
     /**
-     * 添加一个元素
+     * 添加一个元素 实现动态扩容
      * @param element 元素
      */
     public void add(T element){
-        // 新建一个数组且长度加1
-        T[] newArray = (T[]) new Object[array.length + 1];
-        for (int i = 0; i < array.length ; i++) {
+        // 判断是否需要扩容
+        if (array.length <= size){
+            expand();
+        }else {
+            array[size] = element;
+            // 元素个数加 1
+            size++;
+        }
+    }
+
+    /**
+     * 添加元素时，数组动态扩容
+     */
+    private void expand(){
+        // 新建一个数组 长度是之前的2倍
+        T[] newArray = (T[]) new Object[array.length * 2];
+        for (int i = 0; i < array.length; i++) {
             newArray[i] = array[i];
         }
-        // 在新数组的最后一个位置添加一个新元素
-        newArray[array.length] = element;
-        // 赋值给原数组
         array = newArray;
     }
 
@@ -47,18 +63,16 @@ public class Array<T> {
         if (index < 0 || index > array.length ){
             throw new RuntimeException("下标越界！");
         }else{
-            T[] newArray = (T[]) new Object[array.length - 1];
+            T[] newArray = (T[]) new Object[array.length];
             for (int i = 0; i < array.length; i++) {
                 if (i != index){
                     newArray[i] = array[i];
                 }
             }
-            // 这样原数组array就删除了index下标的元素
             array = newArray;
+            size--;
         }
     }
-
-
     /**
      * 修改index下标的元素
      * @param element 元素
@@ -72,6 +86,25 @@ public class Array<T> {
         }
     }
 
+    /**
+     * 获取长度
+     *
+     * @return int
+     */
+    public int getLength(){
+        return array.length;
+    }
 
+    /**
+     * 获取元素个数
+     *
+     * @return int
+     */
+    public int getSize(){
+        return size;
+    }
 
+    public String printArray(){
+        return Arrays.toString(array);
+    }
 }

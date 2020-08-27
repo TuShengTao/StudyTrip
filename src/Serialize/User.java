@@ -8,12 +8,14 @@ import java.io.Serializable;
 public class User implements Serializable {
     private String name;
     private int age;
+    private transient String email;
     // 不会被序列化
     private static int id  = 666;
 
-    public User(String name, int age) {
+    public User(String name, int age, String email) {
         this.name = name;
         this.age = age;
+        this.email = email;
     }
 
     public void run()
@@ -48,6 +50,7 @@ public class User implements Serializable {
     public String toString() {
         return "User{" +
                 "name='" + name + '\'' +
+                ", email='" + email + '\'' +
                 ", age=" + age + '\'' +
                 ", id=" + User.id +
                 '}';

@@ -16,12 +16,14 @@ public class SeializeDemo1 {
             Scanner scanner = new Scanner(System.in);
             System.out.println("输入姓名：");
             String name = scanner.nextLine();
+            System.out.println("输入邮箱：");
+            String email = scanner.nextLine();
             System.out.println("输入年龄：");
             String age = scanner.nextLine();
             System.out.println("输入Id：");
             String id = scanner.nextLine();
             User.setId(Integer.valueOf(id));
-            User user = new User(name,Integer.valueOf(age));
+            User user = new User(name,Integer.valueOf(age),email);
             // 新建文件对象 生成的object.json在StudyTrip的src目录下
             File file = new File("object.json");
             // 构造一个对象输出流
@@ -36,8 +38,6 @@ public class SeializeDemo1 {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
     /**
      * 反序列化
@@ -58,7 +58,6 @@ public class SeializeDemo1 {
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-
     }
 
     public static void main(String[] args) {
@@ -71,6 +70,7 @@ public class SeializeDemo1 {
         // 测试反序列化
         System.out.println("----------测试反序列化----------");
         SeializeDemo1.Deserialization();
-        System.out.println("注意！无论你输入的Id是多少！序列化之后，反序列化输出的都是999，因为id是static变量");
+        System.out.println("注意！无论你输入的Id是多少！序列化之后，反序列化输出的都是999，因为id是static变量，无法被序列化！");
+        System.out.println("由于email是被transient修饰，所以email也无法被序列化！反序列化输出时email=null");
     }
 }
