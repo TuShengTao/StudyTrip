@@ -12,7 +12,7 @@ public class InetAdressDemo {
         /*
         * InetAddress address = InetAddress.getByName("DESKTOP-VJGNSF5");
         * */
-        InetAddress address = InetAddress.getByName("192.168.254.1");
+        InetAddress address = InetAddress.getByName("DESKTOP-VJGNSF5");
 
         String name = address.getHostName();
         String ip = address.getHostAddress();

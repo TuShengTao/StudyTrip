@@ -15,14 +15,10 @@ public class MergeSort {
         int k = 0;
         // 把较小的数先移到新数组中
         while (i <= mid && j <= high) {
-            if (a[i] < a[j]) {
-                temp[k] = a[i];
-                k++;
-                i++;
+            if (a[i] <= a[j]) {
+                temp[k++] = a[i++];
             } else {
-                temp[k] = a[j];
-                k++;
-                j++;
+                temp[k++] = a[j++];
             }
         }
         // 把左边剩余的数移入数组
@@ -46,16 +42,14 @@ public class MergeSort {
         if (low < high)  {
             // 左侧
             mergeSort(a, low, mid);
-            System.out.println("左侧：" + Arrays.toString(a));
             // 右侧
             mergeSort(a, mid + 1, high);
-            System.out.println("右侧：" + Arrays.toString(a));
             // 左右归并
             merge(a, low, mid, high);
         }
     }
     public static void main(String[] args) {
-        int a[] = {3,4,1,2,100,8,7,6};
+        int a[] = {3,4,5,6,0,4,6,23,1,678};
         mergeSort(a, 0, a.length - 1);
         System.out.println("排序结果：" + Arrays.toString(a));
     }

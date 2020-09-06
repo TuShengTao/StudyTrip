@@ -31,7 +31,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/Serialize" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Multithreading/CacheLine" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/JVM/JMM" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Sort/SelectionSort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Sort/BubbleSort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Sort/InsertionSort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/JVM/jvm_heima/src/cn/itcast/jvm/t1/stringtable" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Multithreading/Lock" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Sort/ShellSort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Sort/QuickSort" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -39,5 +45,8 @@
     <orderEntry type="library" name="jackson-core-2.3.3" level="project" />
     <orderEntry type="library" name="jackson-databind-2.3.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.10.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.10.0" level="project" />
   </component>
 </module>
